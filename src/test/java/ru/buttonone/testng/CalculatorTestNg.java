@@ -32,7 +32,7 @@ public class CalculatorTestNg {
     public void shouldHaveCorrectDivide() {
         int result = calculator.divide(12, 3);
         assertEquals(4, result);
-        assertThrows(ArithmeticException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             calculator.divide(10, 0);
         });
 
