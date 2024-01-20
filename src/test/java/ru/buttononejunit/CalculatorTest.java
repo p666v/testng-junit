@@ -39,7 +39,7 @@ public class CalculatorTest {
         int result = calculator.divide(12, 3);
         assertAll("деление/деление на ноль",
                 () -> assertEquals(4, result),
-                () -> assertThrows(ArithmeticException.class, () -> {
+                () -> assertThrows(IllegalArgumentException.class, () -> {
                     calculator.divide(10, 0);
                 }));
 
