@@ -1,6 +1,6 @@
 package ru.buttonone.calculator;
 
-public class CalculatorImpl implements Calculator {
+public class CalculatorImpl implements Calculator  {
     @Override
     public int sum(int a, int b) {
         return a + b;
@@ -18,9 +18,6 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public int divide(int a, int b) {
-        if (b == 0) {
-            throw new IllegalArgumentException("Cannot divide by zero");
-        }
         return a / b;
     }
 }
