@@ -9,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
 public class CalculatorTestNg {
-    Calculator calculator = new CalculatorImpl();
+    private Calculator calculator = new CalculatorImpl();
 
     @Test(description = "Должен корректно суммировать значения")
     public void shouldHaveCorrectSum() {
@@ -46,5 +46,7 @@ public class CalculatorTestNg {
         assertEquals(4, calculator.divide(12, 3));
 
     }
+
+
 
 }
